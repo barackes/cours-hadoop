@@ -24,8 +24,8 @@ sudo systemsetup -setremotelogin on
 installer open-ssh 
 
 ```
-apt-get install -y open-ssh
+apt-get install -y openssh-server
 
-systemctl start openssh
+systemctl start ssh
 ```    
 - installer java (version 8 de preference)
