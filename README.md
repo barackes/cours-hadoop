@@ -1,7 +1,7 @@
 # cours-hadoop
 
 
-## installer hadoop sur la machine locale
+## installer hadoop hdfs sur la machine locale
 
 - telecharger hadoop http://hadoop.apache.org/releases.html
 - verifier si on peut faire un ssh sur localhost:
@@ -14,7 +14,6 @@ pour generer une clé (sans passphrase):
 
 pour mac os, il faut activer le remote login
 
-`
-sudo systemsetup -setremotelogin on
+` sudo systemsetup -setremotelogin on`
 
-- installer java (version 8 de preference)`
+- installer java (version 8 de preference)
