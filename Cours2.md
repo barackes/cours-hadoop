@@ -26,18 +26,18 @@
 - Exemple du consistent hashing 
 
 ## HDFS : NameNode / DataNode
-###NameNode ne stocke pas la donnée
-###NameNode seul nœud qui a l’état global du cluster 
+### NameNode ne stocke pas la donnée
+### NameNode seul nœud qui a l’état global du cluster 
 - Topologie : Qu’est ce que sont mes nœuds
 - Etat du FileSystem
 - Expose les metadonnées
 - Point d’entrée 
 - Garantie la consistence
-###DataNode stocke les données
+### DataNode stocke les données
 - Fichiers traités par blocks (unité atomique d’écriture)
 - Ce qu’on gère réellement c’est les blocks, le fichier n’est qu’un regroupement de blocks
 
-##Event sourcing :
+## Event sourcing :
 - Exemple d’une cagnotte, au lieu de modifier une valeur dans un champ, on conserve les infos de qui a ajouté quoi. Ainsi, possibilité de reproduire
 
 - NameNode va ainsi garder l’état du FileSystem de manière similaire
