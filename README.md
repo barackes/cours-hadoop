@@ -3,119 +3,27 @@
 
 
 ## Structure du cour?
-- [ ] Vision de l'écosystème
+- [x] Vision de l'écosystème
+- [ ] Deep dive sur chaque élément consistuant de l'écosystème
 - [ ] Cas d'usage
 - [ ] Critères de sélection
 - [ ] Le Datalake
 
 
-## L'écosystème Hadoop
-
-### HDFS
-* Système de fichier distribué
-* Abstraction du stockage pour faciliter la manipulation des fichiers (Scalabilité)
-* Fiabilité; Résilience; Disponibilité
-* Expose une interface pour optimser le processing (intelligence dans GFS avec des métadonnées)
-
-
-### HBase
-* Base de donnée distribuée
-
-
-### Hive
-* Langage de requetage SQL
-
-
-### YARN *Yet Another Ressource Negociator*
-* Gestion de ressources / allocation pour un cluster
-
-
-### PIG
-* ETL, batch
-
-
-### ~~OOZIE~~
-* scheduler
-
-
-### TEZ
-* *TODO*
-
-
-### MEZOS
-* Gestion de ressources
-
-
-### Zookeeper
-* Bon fonctionnement des services entre eux
-* Implémente un algorithme de consensus; Permet de gérer certains états de fonctionnement
-
-
-### Spark
-* Engine pour calcule de donnée distribuée (microbatch)
-
-
-### SparkStreaming
-* Spark pour le streaming
-
-
-### KAFKA
-* Permet de contenir les évènements dans une architecture en flux (queue)
-
-
-### Flume
-* Déplacer des quantitées de données (fichiers)
-
-
-### STORM
-* event processing framework
-
-
-### ~~Impala~~
-* Réponse au problème de latence et requêtage de HIVE (SQL compliant) (Framework)
-* Sur-coût de RAM (!!!)
-
-### MapReduce
-* Implémentation Hadoop de l'algorithme de Google
-
-
-### Ambari
-* Administration graphique du cluster Hadoop
-
-
-### Slider
-* Long running service possible
-
-
 - - -
 
+## Installation de hadoop sous ubuntu
 
-### Context **Streaming** ou **Batch**
-* Stream -> Peut-être 1% d'erreur mais on obtient une réponse, même si ce n'est pas forcement stable
-* Batch -> Réponse précise mais prend du **temps**!
+- Installation de java : apt-get install oracle-java8-jdk (par exemple)
 
+- Dans le fichier /etc/environment ajouter la ligne : JAVA_HOME="/usr/lib/jvm/oracle-java8-jdk-amd64"
 
-### Comment choisir la configuration de son cluster?
-* Voir les minimas
- * Tester sur AWS
-* Implémenter les mimas
-* La majorité des problèmes résides généralement dans l'achat du matériel qui prend trop de temps
+- Commande : source /etc/environment
 
+- Commande : export JAVA_HOME
 
-### Combinaisons possibles:
-- MapReduce
-  - HIVE / Pig
-- Spark
-  - Spark / SparkSQL / Hive / Pig
-- Tez
-  - Hive / (Pig?)
+- Telecharger le binaire hadoop depuis le lien suivant : http:/hadoop.apache.org/releases.html
 
+- Decompresser l'archive dans le dossier de votre choix : tar -xzvf [Nom de l'archive]
 
-### Kerberos
-* Protocole de sécurité, reponse sur le principe de tickets (voir Kerberos 5 vMIT)
-
-### Parallélisation **vs** Distribué
-- Parallélisé
-  - Un même job peut être partagé entre plusieurs proccess mais ces proccess partage un même état (Shared state) -> Beaucou de RAM partagé
-- Distribué
-  - Job est découpé. Chaque portion peut être exécuté indépendamment des autres.
+- Si ssh localhost ne marche pas : generer cle sans passphrase (ssh-keygen -t rsa) et eventuellement activer le remote login (sudo systemsetup -setremotelogin on)
