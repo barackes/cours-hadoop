@@ -15,6 +15,6 @@ cours hadoop sio 2018
 
 - Decompresser l'archive dans le dossier de votre choix : tar -xzvf [Nom de l'archive]
 
--  Installer openssh server : sudo apt-get install openssh-server
+- Installer openssh server : sudo apt-get install openssh-server
 
-- Si ssh localhost ne marche pas : generer cle sans passphrase (ssh-keygen -t rsa) et eventuellement activer le remote login (sudo systemsetup -setremotelogin on)
+- Si ssh localhost ne marche pas : generer cle sans passphrase (ssh-keygen -t rsa)
