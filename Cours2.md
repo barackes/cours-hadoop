@@ -55,3 +55,16 @@
 - Facteur de replication 3 : ./bin/hdfs dfs –setrep 3 /user/rafgros/LICENSE.txt
 - Override : ./bin/hdfs dfs –D dfs.replication=3 –put yarn-site.xml /user/rafgros
 
+## Insertion d’un fichier sur HDFS
+- 1: Client dit au NameNode qu’il veut insérer un fichier
+- 2 : NameNode accepte la requête
+- 3 : Client envoi block sur DataNode qui se réplique sur un autre puis sur un autre et acknowledgment qui revient et revient encore (Dans le cas d’un facteur de réplication 3). On parle de réplication qui se fait séquentiellement ce qui est couteux en temps. Pour cela, on préfère insérer un fichier avec un facteur de réplication 1 puis de le passer à 3.
+
+## Pourquoi le facteur de réplication 3 ? 
+- Un slot de fail et un slot de maintenance
+
+## Problème de l’architecture Master/Worker 
+- Le NameNode est un SPOF
+
+## Secondary NameNode ?
+- ZKFC (~Zookeeper) qui décide qui est actif/passif
