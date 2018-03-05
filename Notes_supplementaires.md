@@ -30,8 +30,20 @@
 ## 05.03.2018
 
 
-### Parallélisation **vs** Distribué
+### HBase vs HDFS
+* Hbase plus performant que HDFS en RandomAccès
+* HDFS ouvre une socket pour lire le fichier
+
+
+### Parallélisation *vs* Distribué
 - Parallélisé
   - Un même job peut être partagé entre plusieurs proccess mais ces proccess partage un même état (Shared state) -> Beaucou de RAM partagé
 - Distribué
   - Job est découpé. Chaque portion peut être exécuté indépendamment des autres.
+
+
+### Algorithme pour faire du tri de manière distribué
+* Merge & Sort -- [Wikipedia](https://en.wikipedia.org/wiki/Merge_sort)
+
+
+

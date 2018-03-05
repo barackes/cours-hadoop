@@ -12,15 +12,15 @@
 
 
 ### Hive
-* Langage de requetage SQL
+* Langage de requetage SQL (DSL => Domain Specific Language)
 
 
-### YARN *Yet Another Ressource Negociator*
+### YARN * - Yet Another Ressource Negociator*
 * Gestion de ressources / allocation pour un cluster
 
 
 ### PIG
-* ETL, batch
+* Pour scripts ETL/Batch; Donne de la visibilité sur la manière dont la donnée est stocké 
 
 
 ### ~~OOZIE~~
