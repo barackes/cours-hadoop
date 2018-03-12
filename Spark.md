@@ -54,11 +54,11 @@ Est distribué sur plusieurs Datanodes (de base avec HDFS)
 
 
 ### Job? Stage? Tâche? Executor?
-Un "Job" va prendre le Dataset et faire une opération, représenté par un DAG. Il est constitué de "Stages".
+Un "Job" va prendre le Dataset et faire une opération, représenté par un DAG (représentation logique). Il est constitué de "Stages".
 
 Un "Stage" c'est la ou on a les déplacement de donnée (map / shuffle).
 
-Les "Tâches" sont les opération élémentaires sur les données (peut regroupper plusieurs tâches élémentaires).
+Les "Tâches" sont les opération élémentaires sur les données (peut regroupper plusieurs tâches élémentaires). Vont avoir des Exécutors qui vont durer toute la vie de la JVM/
 
 Les "Executors" permetent de faire du scheduling des jobs et de gérer les ressources associées
 
@@ -66,6 +66,9 @@ Les "Executors" permetent de faire du scheduling des jobs et de gérer les resso
 Pourquoi être partitionné? Car si une partition tombe on peut reconstituer facilement la partition.
 
 Les RDD peuvent être mis en cache (de plusieurs manières). Le mieux c'est de cacher les choses lourdes au niveau processing.
+
+
+Utiliser le standalone quand on dev ou test. En générale en fait du YARN en production.
 
 
 ### Configuration Spark
@@ -80,7 +83,5 @@ Faire attention que notre algo ne créent pas un skew sur les données.
 
 **Avro vs Json**
 > Compression! 1M vs 7M avec l'exemple utilisé en cours
-
-
 
 Sinon utiliser Parquet! utilise de la compression de base (ie. snappy)
