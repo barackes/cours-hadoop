@@ -60,10 +60,27 @@ Un "Stage" c'est la ou on a les déplacement de donnée (map / shuffle).
 
 Les "Tâches" sont les opération élémentaires sur les données (peut regroupper plusieurs tâches élémentaires).
 
-Les "Executors" sont des 
+Les "Executors" permetent de faire du scheduling des jobs et de gérer les ressources associées
+
+
+Pourquoi être partitionné? Car si une partition tombe on peut reconstituer facilement la partition.
+
+Les RDD peuvent être mis en cache (de plusieurs manières). Le mieux c'est de cacher les choses lourdes au niveau processing.
+
+
+### Configuration Spark
+Les configurations les plus importantes ont des alias !!!
+
+
+### Autres
+En environement de production, Spark vérifie que la sortie n'existe aps avant de lancer tous les process.
+
+Faire attention que notre algo ne créent pas un skew sur les données.
+
+
+**Avro vs Json**
+> Compression! 1M vs 7M avec l'exemple utilisé en cours
 
 
 
-
-
-
+Sinon utiliser Parquet! utilise de la compression de base (ie. snappy)
