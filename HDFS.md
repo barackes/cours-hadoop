@@ -2,11 +2,11 @@
 
 ### HDFS *- Master/Slave*
 
-NameNode - permet de savoir ou sont stockés les blocks de données que l'on cherche à atteindre
-DataNode - contient les datas 
+NameNode - Gère et expose l'ensemble des métadonnées du Filesystem. Il permet de savoir ou sont stockés les blocks de données que l'on cherche à atteindre.
+DataNode - Contient les données.
 
 **Le Namenode:**
-- Ne stocker pas la donnée
+- Ne stocke pas la donnée
 - À l'état global du cluster
  - Topologie
  - Etat du FS
@@ -15,7 +15,7 @@ DataNode - contient les datas
 - Garantie la consistance du cluster
 
 **Le Datanode**
-- Les fichiers sont traités par blocks (unité atomique d'écriture)
+- Les fichiers sont traités par blocks - unité atomique de gestion (lecture/écriture et distribution)
 
 
 - - -
@@ -23,25 +23,31 @@ DataNode - contient les datas
 ## HDFS 
 
 - Formattage
- - Permet de mapper les paths aux blocks de notre DD
+ - Initialise l'arborescence des path locaux à utiliser.
  > /bin/hdfs namenode -format
 
 ### IF ERROR:
 - regarder les logs...
 
-Le fichier .ckpt contient un checkpoint des transactions faites
 
-
-### Lancement de HDFS 
+### Lancement de HDFS en mode pseudo-distribué
 > /sbin/hdfs start-dfs.sh
 
 
 ### Verifier le bon fonctionnement
 - jps -> process java qui tournent
+```
+$ jps [ENTER]
+79554 SparkSubmit
+27528 DataNode
+79832 Jps
+27247 SecondaryNameNode
+27039 NameNode
+```
 - netstat -an | grep LISTEN
 
 
-### Verifier le system de fichier
+### Requêtage sur le system de fichier distribué
 > /bin/hdfs dfs -ls /
 
 > /bin/hdfs dfs -mkdir /user/{username}
