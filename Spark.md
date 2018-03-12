@@ -17,9 +17,9 @@ dans /bin/ nous trouvons trois binaires important:
 
 
 On va set une variable pour s'amuser:
-
-> val license = spark.read.textFile("LICENSE")
-
+```
+val license = spark.read.textFile("LICENSE")
+```
 
 On va ensuite ce qui constitue cette valeur:
 
@@ -37,7 +37,9 @@ lisence.show(20,false) => Que 20 lignes, sans tronquer.
 ```
 
 Fonction un peu plus avancée:
-> license.sample(0.1).foreach(println(_)) 
+```
+license.sample(0.1).foreach(println(_)) 
+```
 
 Nous permet de sampler un gros dataset.
 
@@ -45,14 +47,23 @@ Avec les RDD on utilise pas mal de fonctions annonymes (lambda). C'est déconsei
 
 ## RDD *- Resilient Distributed Dataset*
 Deux caractéristiques RDD:
-### Résiliente
+### Résilient
 On peut la regénéré en cas d'erreure 
-
 ### Distribué
 Est distribué sur plusieurs Datanodes (de base avec HDFS)
 
-### Job? Stage? Tâche?
-Un job va prendre le Dataset .... , il est constitué de Stage
 
-Un stage c'est 
+### Job? Stage? Tâche? Executor?
+Un "Job" va prendre le Dataset et faire une opération, représenté par un DAG. Il est constitué de "Stages".
+
+Un "Stage" c'est la ou on a les déplacement de donnée (map / shuffle).
+
+Les "Tâches" sont les opération élémentaires sur les données (peut regroupper plusieurs tâches élémentaires).
+
+Les "Executors" sont des 
+
+
+
+
+
 
