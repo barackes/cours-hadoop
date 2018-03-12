@@ -5,6 +5,8 @@
 ## Structure du cour?
 - [x] Vision de l'écosystème
 - [ ] Deep dive sur chaque élément consistuant de l'écosystème
+ - [x] HDFS
+ - [ ] Spark
 - [ ] Cas d'usage
 - [ ] Critères de sélection
 - [ ] Le Datalake

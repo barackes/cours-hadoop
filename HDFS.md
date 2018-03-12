@@ -84,7 +84,7 @@ On entre dans le datanode > `data/`
 
 ### HDFS *que se passe-t-il quand un client fait une demande*
 - Le client fait une demande au NN
-- le NN vérifie les droits et lui donne un token qui contient les informations suivantes: 
+- le NN vérifie les droits, existence et lui donne un token qui contient les informations suivantes: 
   - les pointeurs pour se connecter sur les Datanodes où le client est autorisé à écrire
   - les blocks sur ces Datanodes où il peut écrire
   - les fallback (plusieurs Datanodes / blocks)
