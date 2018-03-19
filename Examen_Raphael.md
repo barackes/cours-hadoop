@@ -56,10 +56,14 @@ utilise par défaut une compression snappy.
 # Peut on faire du spark sans HDFS? et sans YARN?
 
 ## Spark sans HDFS
-Il est en effet possible de faire du spark sans HDFS en l'utilisant dans un mode standalone sans Hadoop. On a peu en faire l'expérience lors des traveaux pratiques en classe.
+Il est en effet possible de faire du spark sans HDFS en l'utilisant dans un mode standalone sans Hadoop. Spark peut en effet lire et processer des données sur d'autres types de systèmes de fichiers
+en jouant son role d'engine de calcul de données. Etant donné que Spark n'a pas de layer de stockage, on l'associe en général à un système de fichiers distribué tel que HDFS. Sans HDFS, Spark fait ses calculs
+de manière distribuée sur différentes machines sans stockage distribué.
+
 
 ## Spark sans YARN
-C'est aussi possible comme évoqué plusieurs fois précédemment avec son utilisation en mode Standalone mais on rappelle que cela n'est pas assez solide pour de la production.
+C'est aussi possible comme évoqué plusieurs fois précédemment avec son utilisation en mode Standalone mais on rappelle que cela n'est pas assez solide pour de la production. Cela
+nous servira principalement pour du développement ou du test.
 
 # Quelles sont les differences entre Hadoop v1 et Hadoop v2?
 
