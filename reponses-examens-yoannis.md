@@ -92,13 +92,14 @@ Spark lance un **Drive** qui permet de lancer des **Work Nodes**. Ces Work Nodes
 	
 	
 ### Avantages & Inconvénients
-Avantages:
-	Resilient
-	Distribué
-	Consomme peu de mémoire
-	Optimisé pour l'utilisation de la RAM
-	Rapide d'exécution
-Inconvénients:
+	Avantages:
+		Resilient
+		Distribué
+		Consomme peu de mémoire
+		Optimisé pour l'utilisation de la RAM
+		Rapide d'exécution
+	Inconvénients:
+		La mémoire vive peut devenir un goulot d'étrangelement
 
 ----------
 
