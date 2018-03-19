@@ -50,12 +50,12 @@ c'est une simple librairie que l'on gère en tant que dépendance d'une applicat
 
 ## Quelles sont les differences entre Hadoop v1 et Hadoop v2?
 
-Hadoop v1 supporte uniquement MapReduce
-Hadoop v1 est limité à 4000 noeuds par cluster contre 10 000 pour Hadoop v2
-Hadoop v1 autorise 1 seul nameNode ce qui constitue un SPOF
+  Hadoop v1 supporte uniquement MapReduce
+  Hadoop v1 est limité à 4000 noeuds par cluster contre 10 000 pour Hadoop v2
+  Hadoop v1 autorise 1 seul nameNode ce qui constitue un SPOF
 
-Hadoop v2 supporte MapReduce mais également d'autres framework de calculs distribués comme Spark
-Hadoop v2 intègre YARN
-Hadoop v2 gère plusieurs nameNodes
-Hadoop v2 gère la haute disponibilité Mode (HA) des Namenodes
-Hadoop v2 peut gérer jusqu'à 10 000 noeuds par cluster
+  Hadoop v2 supporte MapReduce mais également d'autres framework de calculs distribués comme Spark
+  Hadoop v2 intègre YARN
+  Hadoop v2 gère plusieurs nameNodes
+  Hadoop v2 gère la haute disponibilité Mode (HA) des Namenodes
+  Hadoop v2 peut gérer jusqu'à 10 000 noeuds par cluster
