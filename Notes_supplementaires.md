@@ -10,7 +10,7 @@
 ### Comment choisir la configuration de son cluster?
 * Voir les minimas
  * Tester sur AWS
-* Implémenter les mimas
+* Implémenter les minimas
 * La majorité des problèmes résides généralement dans l'achat du matériel qui prend trop de temps
 
 
