@@ -25,3 +25,5 @@ Sinon il y a les "fondements" de cet ecosystemes et qui sont pour moi des lectur
  - [Spark SQL: Relational Data Processing in Spark] (https://people.csail.mit.edu/matei/papers/2015/sigmod_spark_sql.pdf)
  - [c10k problem](http://www.kegel.com/c10k.html)
  - [Latency Numbers Every Programmer Should Know] (https://people.eecs.berkeley.edu/~rcs/research/interactive_latency.html)
+
+Et enfin, il faut lire le code source et au moins le parcourir sur github.
