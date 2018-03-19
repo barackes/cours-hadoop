@@ -4,10 +4,10 @@ Hadoop/HDFS:
 Certains chapitres sont extremement importants et peu repris dans d'autres ouvrages (hdfs, IO, Input/output Format)
 
 - Sinon le site de hadoop comporte pas mal d'informations de facon concise. Par exemple :
- - Notre premier exercice: http://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-common/SingleCluster.html
- - Une overview de l'architectre de hdfs: http://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-hdfs/HdfsDesign.html
- - les commandes: http://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-hdfs/HDFSCommands.html et http://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-common/FileSystemShell.html
- - le deploiement en High Availability http://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-hdfs/HDFSHighAvailabilityWithQJM.html
+  + Notre premier exercice: http://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-common/SingleCluster.html
+  + Une overview de l'architectre de hdfs: http://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-hdfs/HdfsDesign.html
+  + les commandes: http://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-hdfs/HDFSCommands.html et http://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-common/FileSystemShell.html
+  + le deploiement en High Availability http://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-hdfs/HDFSHighAvailabilityWithQJM.html
  
  
 Spark:
