@@ -16,4 +16,4 @@ Néanmoins, HDFS est peu adapté pour des opérations nécessitant des écriture
 Spark peut en effet tourner sans Yarn, mais sera logiquement privé des fonctions de ce dernier, notamment le queuing. 
 
 
-5)	Hadoop 1 ne supporte que le modèle de calcul de Map-Reduce, là où Hadoop 2 supporte d’autres modèles distribués comme Spark. La scalabilité de Hadoop 1 est limitée à 4000 nœuds par clusters, contre 10 000 nœuds par clusteurs pour Hadoop 2. Par ailleurs Hadoop 2 a introduit YARN, qui gère désormais la mémoire et le CPU, et permet ainsi une séparation nette entre gestion des ressources et traitement des données. 
+5)	Hadoop 1 ne supporte que le modèle de calcul de Map-Reduce, là où Hadoop 2 supporte d’autres modèles distribués comme Spark. La scalabilité de Hadoop 1 est limitée à 4000 nœuds par clusters, contre 10 000 nœuds par clusteurs pour Hadoop 2. Par ailleurs Hadoop 2 a introduit YARN, qui gère désormais la mémoire et le CPU, et permet ainsi une séparation nette entre gestion des ressources et traitement des données.
