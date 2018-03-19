@@ -54,6 +54,7 @@ c'est une simple librairie que l'on gère en tant que dépendance d'une applicat
 -  Hadoop v1 est limité à 4000 noeuds par cluster contre 10 000 pour Hadoop v2
 -  Hadoop v1 autorise 1 seul nameNode ce qui constitue un SPOF
 
+
 -  Hadoop v2 supporte MapReduce mais également d'autres framework de calculs distribués comme Spark
 -  Hadoop v2 intègre YARN
 -  Hadoop v2 gère plusieurs nameNodes
