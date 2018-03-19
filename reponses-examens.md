@@ -25,7 +25,10 @@ Point faible : a besoin d'un filesystem,
 
 ### 4-Peut-on faire du Spark sans HDFS ? et sans YARN ?
 
-Oui, c'est possible de faire du Spark sans HDFS et sans YARN,
+Oui, c'est possible de faire du Spark sans HDFS et sans YARN;
+
+Sans hdfs, il est possible de passer notre jeu de donnée en local directement en spark et l'utiliser sans pour autant avoir besoin d'un filesystem manager,
+Sans Yarn, Spark utilise son mode Standalone sans yarn et sans Mesos
 
 ### 5-Quelles sont les differences entre Hadoop v1 et Hadoop v2?
 
