@@ -76,7 +76,7 @@ Les configurations les plus importantes ont des alias !!!
 
 
 ### Autres
-En environement de production, Spark vérifie que la sortie n'existe aps avant de lancer tous les process.
+En environement de production, Spark vérifie que la sortie n'existe pas avant de lancer tous les process.
 
 Faire attention que notre algo ne créent pas un skew sur les données.
 
