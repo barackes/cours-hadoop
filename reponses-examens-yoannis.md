@@ -1,7 +1,5 @@
 # Yoannis TELPHON
 
-----------
-
 ## Citez 3 composantes de l’écosystème Hadoop: Décrivez les succinctement, expliquez votre choix
 
 
@@ -54,7 +52,7 @@
 ## Qu’avez vous retenu de Spark: architecture, fonctionnement, éléments de conception, points fort/faible
 
 
-Architecture:
+### Architecture:
 	Il y a sept éléments important dans l'architecture de Spark:
 
 
@@ -86,11 +84,11 @@ Architecture:
 		L'API DataFrame, introduit dans Spark 1.3 est le remplaçant du RDD. Il est orienté requêtes relationnels que Spark peut optimiser.
 		
 
-Fonctionnement:
+### Fonctionnement:
 	Spark lance un **Drive** qui permet de lancer des **Work Nodes**.
 	Ces Work Nodes contienent des **Executors** qui permettes de lancer différents **Jobs**. Ces **Jobs** sont eux même décomposés en **Stages** qui sont eux même décomposés en **Tâches**.
 	
-Avantages & Inconvénients
+### Avantages & Inconvénients
 	Avantages:
 		Resilient
 		Distribué
