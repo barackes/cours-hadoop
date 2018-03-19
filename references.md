@@ -1,6 +1,6 @@
 Hadoop/HDFS:
 
-- La reference des livres sur hadoop c'est [Hadoop: The Definitive Guide, 4th Edition ](http://shop.oreilly.com/product/0636920033448.do). C'est une excellente lecture pour faire le tour de l'ecosysteme et comprendre son etat d'esprit.
+- La reference des livres sur hadoop c'est [Hadoop: The Definitive Guide, 4th Edition ](http://shop.oreilly.com/product/0636920033448.do). C'est une excellente lecture pour faire le tour de l'ecosysteme et comprendre son etat d'esprit, bien que un peu out-of-date.
 Certains chapitres sont extremement importants et peu repris dans d'autres ouvrages (hdfs, IO, Input/output Format)
 
 - Sinon le site de hadoop comporte pas mal d'informations de facon concise. Par exemple :
