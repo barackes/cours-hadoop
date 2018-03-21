@@ -5,13 +5,13 @@ Examen Hadoop Philippe LUZEAUX
 HDFS, YARN, Mesos, Spark
 
 Pour moi ce sont les briques de base d'un système Hadoop pour HDFS Mesos et YARN.
-Et les système de calcul distribué le plus efficace pour Spark.
+Et le système de calcul distribué le plus efficace pour Spark.
 
 HDFS est un système de fichiers distribués
 
-YARN est un outil de gestion des ressources distribuées multi-clusters. Adopté lors de la version 2 de Hadoop
+YARN est un outil de gestion des ressources distribuées multi-clusters. Adopté lors de la version 2 de Hadoop.
 
-Mesos est un concurrent de YARN et possède les mêmes fonctions, mais plus récent et plus évolué
+Mesos est un concurrent de YARN et possède les mêmes fonctions de gestion de ressources distribuées.
 
 Spark est un framework open source de calcul distribué. Il s'agit d'un ensemble d'outils et de composants de traitements big data pour effectuer des analyses complexes à grande échelle.
 
